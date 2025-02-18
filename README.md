@@ -27,40 +27,6 @@ This repository contains Terraform configurations to deploy a two-tier architect
 - Terraform installed (`>=1.0` recommended)
 - IAM user with required permissions to create VPC, EC2, ALB, and related resources
 
-## Deployment Steps
-
-1. **Clone this repository:**
-   ```sh
-   git clone https://github.com/your-repo/Two-Tier-Architecture-with-ALB.git
-   cd Two-Tier-Architecture-with-ALB
-   ```
-2. **Initialize Terraform:**
-   ```sh
-   terraform init
-   ```
-3. **Plan the deployment:**
-   ```sh
-   terraform plan
-   ```
-4. **Apply the Terraform configuration:**
-   ```sh
-   terraform apply -auto-approve
-   ```
-5. **Retrieve the ALB DNS name:**
-   ```sh
-   terraform output ipaddress
-   ```
-6. **Access the web application:**
-   Open the ALB DNS name in a browser to see the "Hello World" message.
-
-## Cleanup
-
-To destroy all resources and clean up the AWS environment:
-
-```sh
-terraform destroy -auto-approve
-```
-
 ## File Structure
 
 ```
